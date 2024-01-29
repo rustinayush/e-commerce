@@ -1,0 +1,101 @@
+<div class="hero-section">
+    <!-- Hero Section Image (Replace with your actual image URL) -->
+    <img src="https://items.templately.com/item-77c733ca898cdad465605361d4132f13/wave-digital-hero-section-for-gutenberg-thumbnail-GncGlqS.jpg" alt="Hero Image">
+</div>
+
+<div class="product-category">
+    <h2>Jewellery</h2>
+    <div class="product-cards" *ngFor="let product of jewelleryProducts">
+        <a [routerLink]="'/jewellery/' + product.id"></a>
+        <img [src]="product.image" alt="{{ product.title }}">
+        <h3>{{ product.title }}</h3>
+        <p>{{ product.price }} $</p>
+    </div>
+</div>
+
+<div class="product-category">
+    <h2>Men's Clothing</h2>
+    <div class="product-cards" *ngFor="let product of mensClothingProducts">
+        <a [routerLink]="'/mens-clothing/' + product.id"></a>
+        <img [src]="product.image" alt="{{ product.title }}">
+        <h3>{{ product.title }}</h3>
+        <p>{{ product.price }} $</p>
+    </div>
+</div>
+
+<div class="product-category">
+    <h2>Electronics</h2>
+    <div class="product-cards" *ngFor="let product of electronicsProducts">
+        <a [routerLink]="'/mens-clothing/' + product.id"></a>
+        <img [src]="product.image" alt="{{ product.title }}">
+        <h3>{{ product.title }}</h3>
+        <p>{{ product.price }} $</p>
+    </div>
+</div>
+
+
+
+
+
+
+<!-- <div class="hero-section">
+
+    <img src="https://items.templately.com/item-77c733ca898cdad465605361d4132f13/wave-digital-hero-section-for-gutenberg-thumbnail-GncGlqS.jpg" alt="Hero Image">
+</div>
+
+
+<ng-container *ngIf="isProductsRoute()">
+    <div class="product-category">
+        <h2>Jewellery</h2>
+        <div class="product-cards" *ngFor="let product of jewelleryProducts">
+            <img [src]="product.image" alt="{{ product.title }}">
+            <h3>{{ product.title }}</h3>
+            <p>{{ product.category }}</p>
+        </div>
+    </div>
+
+    <div class="product-category">
+        <h2>Men's Clothing</h2>
+        <div class="product-cards" *ngFor="let product of mensClothingProducts">
+            <img [src]="product.image" alt="{{ product.title }}">
+            <h3>{{ product.title }}</h3>
+            <p>{{ product.category }}</p>
+        </div>
+    </div>
+
+    <div class="product-category">
+        <h2>Electronics</h2>
+        <div class="product-cards" *ngFor="let product of electronicsProducts">
+            <img [src]="product.image" alt="{{ product.title }}">
+            <h3>{{ product.title }}</h3>
+            <p>{{ product.category }}</p>
+        </div>
+    </div>
+</ng-container> -->
+
+<!-- <div class="product-category">
+    <h2>Jewellery</h2>
+    <div class="product-cards" *ngFor="let product of jewelleryProducts">
+        <img [src]="product.image" alt="{{ product.title }}">
+        <h3>{{ product.title }}</h3>
+        <p>{{ product.category }}</p>
+    </div>
+</div>
+
+<div class="product-category">
+    <h2>Men's Clothing</h2>
+    <div class="product-cards" *ngFor="let product of mensClothingProducts">
+        <img [src]="product.image" alt="{{ product.title }}">
+        <h3>{{ product.title }}</h3>
+        <p>{{ product.category }}</p>
+    </div>
+</div>
+
+<div class="product-category">
+    <h2>Electronics</h2>
+    <div class="product-cards" *ngFor="let product of electronicsProducts">
+        <img [src]="product.image" alt="{{ product.title }}">
+        <h3>{{ product.title }}</h3>
+        <p>{{ product.category }}</p>
+    </div>
+</div> -->
